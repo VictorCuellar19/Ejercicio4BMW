@@ -1,22 +1,40 @@
-
-.section1{
-    height: 1200px;
-    width: 1600px;
-    background-image:url(https://th.bing.com/th/id/R.8cdd55cd831e009350237e724599daa6?rik=IpA%2fPze5srS5Ug&riu=http%3a%2f%2fwww.hdwallpaper.nu%2fwp-content%2fuploads%2f2015%2f10%2fbmw-logo-05.jpg&ehk=il4XyxmnkYslvYuiKyQNWsfWz4ZHOnoDuoM4JTRE5BA%3d&risl=&pid=ImgRaw&r=0);
-    background-size:cover;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-.nav{
-    height: 100px;
-    width: 1600px;
+.header{
+    width: 100vw;
+    height: 100vh;
+    background-image: "./assets/BMWlogoblack.jpg";
+    background-size: cover;
+}
+.header__nav{
+    width: 100vw;
+    height: 10vh;
     display: flex;
-    border-bottom: 1px;
-    border-color: white;
-    background-color: black;
-}
-.nav_ul{
-    color: white;
     justify-content: space-around;
+    align-items: center;
+}
+.header__nav::after{
+    width: 1000px;
+    height: 1px;
+    background-color:white;
+    position: absolute;
+    content: "";
+    top: 10%;
+}
+.header__nav__ul--anchors{
     display: flex;
-    align-items: start;  
-    padding: 5px;
+    gap: 30px;
+}
+.header__nav__ul--icons{
+    display: flex;
+    gap: 30px;
+}
+.iconos{
+    width: 30px;
+}
+.logo{
+    width: 40px;
 }
